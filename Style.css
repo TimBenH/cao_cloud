@@ -1,0 +1,58 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.page-accueil {
+    background-image: url('Image/image_accueil3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bandeau-blanc {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Largeur de la bande blanche */
+    box-sizing: border-box; /* Pour inclure le padding dans la largeur */
+}
+
+.champ {
+    margin-bottom: 15px;
+}
+
+.champ label1 {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: -205px; 
+}
+
+.champ label2 {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: -233px; 
+}
+
+.champ input {
+    width: 20%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ffffff;
+}
+
+.champ img {
+    position: absolute; /* Pour positionner l'image */
+    top: 50%; /* Pour centrer l'image verticalement */
+    right: 20%; /* Pour aligner l'image sur la droite */
+    transform: translateY(-50%); /* Pour corriger la position verticale */
+    height: 100px; /* Hauteur de l'image */
+    width: auto; /* Largeur automatique pour conserver les proportions */
+}
