@@ -1,0 +1,26 @@
+/*style for button*/
+.new_files {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    
+}
+/*style for the content*/
+.Big_PopUp {
+    display: none;
+    position: fixed;
+    bottom: 25%;
+    right: 20%;
+    border: 3px solid #f1f1f1;
+    background-color: white;
+    width: 60%;
+    height: 50%;
+}
+
+.title_PopUp {
+    position: absolute ;
+    top: 0;
+    left: 0;
+}
