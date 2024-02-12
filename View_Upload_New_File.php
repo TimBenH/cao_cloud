@@ -20,32 +20,36 @@
     echo '<h2>' . "Nouvelle version: $fichier_selectionne" . '</h2><br>';
     ?>
 
-       
-       
-       <p id="instruction1">Déposer la nouvelle version ci-dessous<br></p>
-       <div classe="cadre" id="cadreZoneDepot">
-            
-            <div id="cadretiretZoneDepot">
-                <img src="http://projettai/code/image/t%c3%a9l%c3%a9charger.jpg" alt="Flèche téléchargement">
-                <p id="instruction2"><br>Vous pouvez glisser un fichier ici pour l'ajouter <br></p>
+        <div id="zone">
+            <div id="zone1" class="flexItem">
+                <p id="instruction1">Déposer la nouvelle version ci-dessous<br></p>
+                <div classe="cadre" id="cadreZoneDepot">
+                    
+                    <div id="cadretiretZoneDepot">
+                        <img src="http://projettai/code/image/t%c3%a9l%c3%a9charger.jpg" alt="Flèche téléchargement">
+                        <p id="instruction2"><br>Vous pouvez glisser un fichier ici pour l'ajouter <br></p>
+                        
+                    </div>
+                </div>
+                    
+                <div>
+                    <!--Espace attribué aux bouton choisir fichier et annuler -->
+                    <button id="boutonChoisirFichier">Choisir fichier</button>
+                    <button id="boutonAnnuler">Annuler</button>
+                </div>
+            </div>
+        
+            <div id="zone2" class="flexItem">
+                <div class="cadre" id="cadreCommentaire">
+                    <!--Espace attribué à la zone de commentaire-->
+                    <p id="pCommentaireUNF">Commentaire:</p>
+                    <textarea id="TACommentNewFile" name="commentNewFile" rows="20" cols="70"></textarea>
+                </div>
+
+                <div>
+                    <!--Espace attribué au bouton: sauvegarder les changements -->
+                    <button>Choisir fichier</button>
+                </div>
             </div>
         </div>
-            
-        <div>
-            <!--Espace attribué aux bouton choisir fichier et annuler -->
-            <button id="boutonChoisirFichier">Choisir fichier</button>
-            <button id="boutonAnnuler">Annuler</button>
-        </div>
-
-        <div classe="cadre" id="cadreCommentaire">
-            <!--Espace attribué à la zone de commentaire-->
-            <p id="pCommentaireUNF">Commentaire:</p>
-            <textarea id="TACommentNewFile" name="commentNewFile" rows="20" cols="70"></textarea>
-        </div>
-
-        <div>
-            <!--Espace attribué au bouton: sauvegarder les changements -->
-            <button>Choisir fichier</button>
-        </div>
-
     </body>

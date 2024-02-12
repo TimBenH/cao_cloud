@@ -1,62 +1,57 @@
-
-
 h1 {
     position: static;
-    margin-top: 20;
-    margin-left: 20;
+    margin-top: 20px; /* Ajout de l'unité px */
+    margin-left: 20px; /* Ajout de l'unité px */
     font-weight: bold;
-    color: black; 
+    color: black;
 }
 
 h2 {
     position: static;
-    margin-left:20;
+    margin-left: 20px; /* Ajout de l'unité px */
     color: black;
     font-style: italic;
 }
 
-p{
-    color: black; 
+p {
+    color: black;
+}
+
+#zone {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#zone1,
+#zone2 {
+    width: 50%; /* Chaque élément occupe 50% de la largeur du conteneur */
+    box-sizing: border-box;
+    display: flex; /* Ajout de cette propriété pour que les enfants soient disposés en ligne (par défaut, en colonne) */
 }
 
 img {
-    width: 50%; /* 50% de la largeur du conteneur parent */
-    
+    width: 50%; /* Modification de la largeur de l'image pour qu'elle occupe 100% de la largeur du conteneur parent */
 }
 
-#instruction1{
-    position: static;
-    margin-left: 50;
-}
-
-#cadreZoneDepot{
-    margin-left: 50;
-    width: 35%;
-    height: 50%;
-    
-    
-    border: 2px solid #333; /* Largeur, style (solid, dashed, dotted, etc.) et couleur du bord */
-    background-color: #f0f0f0;
+#cadretiretZoneDepot {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#cadretiretZoneDepot{
-    
-    width: 95%;
-    height: 95%;
-    border-radius: 5% ;
-    box-sizing: border-box;
-    border: 2px dashed #5c5959; /* Largeur, style (solid, dashed, dotted, etc.) et couleur du bord */
+    border: 2px dashed #5c5959;
     background-color: #dfd4d4;
     padding: 20px;
     display: grid;
     place-items: center;
-
-    
-    
 }
 
+/* Ajout de style pour le bouton "Choisir fichier" */
+#boutonChoisirFichier {
+    margin-right: 10px; /* Ajout de marge à droite pour séparer les boutons */
+}
 
+/* Ajout de style pour le bouton "Sauvegarder les changements" */
+#zone2 button {
+    width: 100%; /* Le bouton occupe 100% de la largeur du conteneur parent */
+    margin-top: 10px; /* Ajout de marge en haut pour l'espace */
+}
