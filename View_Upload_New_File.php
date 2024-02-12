@@ -26,7 +26,7 @@
                 <div classe="cadre" id="cadreZoneDepot">
                     
                     <div id="cadretiretZoneDepot">
-                        <img src="http://projettai/code/image/t%c3%a9l%c3%a9charger.jpg" alt="Flèche téléchargement">
+                        <img src="http://projettai/code/image/t%c3%a9l%c3%a9charger.png" alt="Flèche téléchargement">
                         <p id="instruction2"><br>Vous pouvez glisser un fichier ici pour l'ajouter <br></p>
                         
                     </div>
@@ -43,7 +43,7 @@
                 <div class="cadre" id="cadreCommentaire">
                     <!--Espace attribué à la zone de commentaire-->
                     <p id="pCommentaireUNF">Commentaire:</p>
-                    <textarea id="TACommentNewFile" name="commentNewFile" rows="20" cols="70"></textarea>
+                    <textarea id="TACommentNewFile" name="commentNewFile" rows="18" cols="70"></textarea>
                 </div>
 
                 <div>
@@ -53,3 +53,4 @@
             </div>
         </div>
     </body>
+</html>
