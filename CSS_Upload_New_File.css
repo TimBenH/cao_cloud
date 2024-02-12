@@ -24,7 +24,9 @@ p {
 
 #zone1,
 #zone2 {
-    width: 50%; /* Chaque élément occupe 50% de la largeur du conteneur */
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%; /* Chaque élément occupe 50% de la largeur du conteneur */
     box-sizing: border-box;
     display: flex; /* Ajout de cette propriété pour que les enfants soient disposés en ligne (par défaut, en colonne) */
 }
@@ -33,13 +35,22 @@ img {
     width: 50%; /* Modification de la largeur de l'image pour qu'elle occupe 100% de la largeur du conteneur parent */
 }
 
+#cadreZoneDepot{
+    box-sizing: border-box;
+    border: 2px solid #0a0a0a;
+    background-color: #dbd8d8;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}
+
 #cadretiretZoneDepot {
     width: 100%;
     height: 100%;
     border-radius: 5%;
     box-sizing: border-box;
-    border: 2px dashed #5c5959;
-    background-color: #dfd4d4;
+    border: 4px dashed #595858;
+    background-color: #aaa9a9;
     padding: 20px;
     display: grid;
     place-items: center;
@@ -54,4 +65,28 @@ img {
 #zone2 button {
     width: 100%; /* Le bouton occupe 100% de la largeur du conteneur parent */
     margin-top: 10px; /* Ajout de marge en haut pour l'espace */
+    
+}
+#zone1 button {
+    
+    margin-top: 10px;  /*Ajout de marge en haut pour l'espace */
+    display: inline-block;
+    
+}
+
+#zone1{
+    display: flex;
+    margin-left: 10%;
+}
+
+#zone2{
+    margin-left: 10%;  
+}
+
+#boutonChoisirFichier{
+    
+}
+
+#boutonAnnuler{
+
 }
