@@ -34,7 +34,15 @@
                     
                 <div>
                     <!--Espace attribué aux bouton choisir fichier et annuler -->
-                    <button id="boutonChoisirFichier">Choisir fichier</button>
+                    <button id="boutonChoisirFichier" onclick="openFileExplorer()">Choisir fichier</button>
+                    <script>
+                        function openFileExplorer() {
+                        document.getElementById('fileInput').click();
+                        }
+                    </script>
+
+                    <!-- Cet élément input est masqué, mais il sera déclenché lors de l'appel à la fonction openFileExplorer -->
+                    <input type="file" id="fileInput" style="display:none;">
                     <button id="boutonAnnuler">Annuler</button>
                 </div>
             </div>
