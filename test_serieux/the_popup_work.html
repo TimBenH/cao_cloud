@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the_popup_work</title>
+
+    <!-- Les liens vers le JS et CSS -->
+    <link rel="stylesheet" href="the_popup_work.css">
+    <script src="the_popup_workjs"></script>
+
+<body>
+    <!-- La partie avec les boutons pour accéder aux pop ups -->
+    <div id="the_buttons">
+        <button type="button" id="add_file" onclick="open_add_file()">Ajouter un/des fichier(s)</button>
+        <button type="button" id="make_obselete" onclick="open_make_obselete()">Rendre un fichier obselete</button>
+        <button type="button" id="create_project" onclick="open_create_project()">Créer un projet</button>
+        <button type="button" id="add_coworker" onclick="open_add_coworker()">Ajouter un collaborateur</button>
+        <button type="button" id="detail_coworker" onclick="open_detail_coworker()">détail de collaborateur</button>
+    </div>
+    <!-- On aura un bloc pour chaque pop up delimité par des div -->
+    <!-- Le pop up pour rajouter un fichier -->
+    <div id="add_file_p" class="big_pop_up">
+        <div class="p_header">
+            <h2>Add files</h2>
+        </div>
+        <div class="p_content">
+            <div class="file_area">
+                <input type="file" id="file_input" multiple>
+                <div id="preview-container"></div>
+                <div id="button-container">
+                    <button id="preview" onclick="handleFiles()">Preview</button>
+                    <button id="upload" >Upload</button>
+                </div>
+            </div>
+            <div class="comment_area">
+                <input type="text" id="comment_input" placeholder="Add a comment">
+            </div>
+        </div>
+        <div class="p_footer">
+            <button class="nav_pop" id="close_pop" onclick="closePopUp()" type="button">Close</button>
+            <button class="nav_pop" id="validate" onclick="closePopUp()" type="button">Validate</button>
+        </div>
+    </div>
+    <!-- Le pop up pour rendre un fichier obselete -->
+    <div id="make_obselete_p" class="small_pop_up">
+        <div class="small_pop_up" id="obselete_pop_up">
+            <!-- Header -->
+            <div class="p_header">
+                <h2>Obselete pop up</h2>
+            </div>
+            <!-- The content -->
+            <div class="p_content">
+                <p>Sorry, this pop up is obselete</p>
+            </div>
+            <!-- The footer -->
+            <div class="p_footer">
+                <button id="close_pop_up" onclick="closePopUp()" type="button">Close</button>
+                <button id="validation" onclick="obselete()" type="button">Validation</button>
+            </div>
+        </div>
+    </div>
+    <!-- Le pop up pour créer un projet -->
+    <div id="create_project_p" class="long_pop_up">
+        <div class="p_header">
+            <h2>Create a project</h2>
+        </div>
+        <div class="p_content">
+            <div class="project_name">
+                <input type="text" id="project_name_input" placeholder="Project name">
+            </div>
+            <div class="project_description">
+                <input type="text" id="project_description_input" placeholder="Project description">
+            </div>
+            <div class="project_deadline">
+                <input type="date" id="project_deadline_input">
+            </div>
+        </div>
+        <div class="p_footer">
+            <button class="nav_pop" id="close_pop" onclick="closePopUp()" type="button">Close</button>
+            <button class="nav_pop" id="validate" onclick="closePopUp()" type="button">Validate</button>
+        </div>
+    </div>
+    <!-- Le pop up pour ajouter un collaborateur -->
+    <div id="add_coworker_p" class="big_pop_up">
+        <div class="p_header">
+            <h2>Add a coworker</h2>
+        </div>
+        <div class="p_content">
+            <div class="coworker_name">
+                <input type="text" id="coworker_name_input" placeholder="Coworker name">
+            </div>
+            <div class="coworker_email">
+                <input type="email" id="coworker_email_input" placeholder="Coworker email">
+            </div>
+            <div class="coworker_role">
+                <input type="text" id="coworker_role_input" placeholder="Coworker role">
+            </div>
+        </div>
+        <div class="p_footer">
+            <button class="nav_pop" id="close_pop" onclick="closePopUp()" type="button">Close</button>
+            <button class="nav_pop" id="validate" onclick="closePopUp()" type="button">Validate</button>
+        </div>
+    </div>
+    <!-- Le pop up pour voir les détails d'un collaborateur -->
+    <div id="detail_coworker_p" class="big_pop_up">
+        <div class="p_header">
+            <h2>Detail of a coworker</h2>
+        </div>
+        <div class="p_content">
+            <div class="user_info_p" id="user_info">
+
+            </div>
+            <div class="user_files_p" id="user_files">
+                <div id="file_access">
+
+                </div>
+                <div id="add_access">
+
+                </div>
+            </div>
+        </div>
+        <div class="p_footer">
+            <button class="nav_pop" id="close_pop" onclick="closePopUp()" type="button">Close</button>
+        </div>
+    </div>
+</body>

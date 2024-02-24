@@ -1,0 +1,87 @@
+.add_file{
+    /* Center the button on the page*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Style the button */
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+}
+
+.big_pop_up{
+    /* Center the button on the page*/
+    display: none;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    border-style: solid;
+
+    left: 25%;
+    top: 25%;
+
+    background-color: #fff;
+    grid-template-rows: 20% 70% 10%;
+}
+
+.p_header{
+    display: flex;
+    padding: 10px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.p_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* creates two columns of equal width */
+    
+}
+.file_area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width:min-content;
+    font-size: smaller;
+}
+#preview-container{
+    border-radius: 10px;
+    border: 2px dashed #555;
+    width: 90%;
+    height: 60%;
+    padding: 5px;
+    margin: 5px;
+    overflow: scroll;
+}  
+#files_names{
+    overflow: scroll;
+    height: 50%;
+}
+  
+.upload-button {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+
+}
+  
+.status {
+    margin-top: 16px;
+}
+.p_footer{
+    display: flex;
+    padding: 10px;
+}

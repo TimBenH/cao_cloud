@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e_input_02</title>
+    <link rel="stylesheet" href="e_input_02.css">
+    <script src="e_input_02.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <button class="add_file" onclick="openPopUp()" type="button">Add files</button> <!-- class for this type of button and type="button" means that there is no specific behavior loaded -->
+    <div class="big_pop_up" id="add_file">
+        <div class="p_header">
+            <h2>Add files</h2>
+        </div>
+        <div class="p_content">
+            <div class="file_area">
+                <input type="file" id="file_input" multiple>
+                <div id="preview-container"></div>
+                <div id="button-container">
+                    <button id="preview" onclick="handleFiles()">Preview</button>
+                    <button id="upload" >Upload</button>
+                </div>
+            </div>
+            <div class="comment_area">
+                <input type="text" id="comment_input" placeholder="Add a comment">
+            </div>
+        </div>
+        <div class="p_footer">
+            <button class="nav_pop" id="close_pop" onclick="closePopUp()" type="button">Close</button>
+            <button class="nav_pop" id="validate" onclick="closePopUp()" type="button">Validate</button>
+        </div>
+    </div>
+</body>
+</html>
+    

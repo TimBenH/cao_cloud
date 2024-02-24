@@ -1,0 +1,170 @@
+.big_pop_up{
+    /* Center the button on the page*/
+    display: none;
+    position: fixed;
+    width: 75%;
+    height: 75%;
+    border-style: solid;
+
+    left: 12%;
+    top: 12%;
+
+    background-color: #fff;
+    grid-template-rows: 5% 85% 10%;
+}
+.detail_coworker_p{
+    /* Center the button on the page*/
+    display: none;
+    position: fixed;
+    width: 75%;
+    height: 75%;
+    border-style: solid;
+
+    left: 12%;
+    top: 12%;
+
+    background-color: #fff;
+    grid-template-rows: 5% 20% 65% 10%;
+}
+#h2_profil_name{
+    margin: 0;
+    padding: 0;
+}
+
+.small_pop_up{
+    /* Center the button on the page*/
+    display: none;
+    position: fixed;
+    width: 30%;
+    height: 30%;
+    border-style: solid;
+
+    left: 35%;
+    top: 35%;
+
+    background-color: #fff;
+    grid-template-rows: 20% 70% 10%;
+}
+
+.long_pop_up{
+    /* Center the button on the page*/
+    display: none;
+    position: fixed;
+    width: 70%;
+    height: 70%;
+    border-style: solid;
+
+    left: 15%;
+    top: 15%;
+
+    background-color: #fff;
+    grid-template-rows: 20% 70% 10%;
+}
+
+.p_header{
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border:solid;
+    border-width: thin;
+    font-size: x-small;
+    height: 100%;
+}
+.p_content{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    border:solid;
+    border-width: thin;
+    height: 100%;
+}
+
+input[name="file"]{
+    width: 100%;
+    margin: 10px;
+}
+
+input[name="description"]{
+    width: 100%;
+}
+select[name='projet'] {
+    width: 100%;
+    margin: 10px;
+}
+#add_file_f{
+    display: grid;
+    grid-template-rows: auto auto; /* Two rows */
+    grid-template-columns: 1fr; /* One column */
+    gap: 10px; /* Optional gap between grid items */
+}
+#submit_file{
+    width: 100%;
+    margin: 10px;
+}
+.p_footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border:solid;
+    border-width: thin;
+}
+
+
+
+
+#top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: solid;
+    border-width: thin;
+}
+#action{
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+#left{
+    display: grid;
+    grid-template-rows: auto auto; /* Two rows */
+    grid-template-columns: 1fr; /* One column */
+    gap: 10px; /* Optional gap between grid items */
+}
+
+#preview-container{
+    border-radius: 10px;
+    border: 2px dashed #555;
+    width: 90%;
+    height: 60%;
+    padding: 5px;
+    margin: 5px;
+    overflow: scroll;
+}
+#profil_picture{
+    width: auto;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid #555;
+    padding: 5px;
+    margin: 5px;
+    overflow: scroll;
+}
+.upper{
+    display: flex;
+    gap: 10%;
+    align-items: left;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+

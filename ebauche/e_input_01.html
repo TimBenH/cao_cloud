@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e_input_01</title>
+    <link rel="stylesheet" href="e_input_01.css">
+    <script src="e_input_01.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <button class="add_file" onclick="openPopUp()" type="button">Add files</button> <!-- class for this type of button and type="button" means that there is no specific behavior loaded -->
+    <div class="big_pop_up" id="add_file">
+        <div class="p_header">
+            <h2>Add files</h2>
+        </div>
+        <div class="p_content">
+            <div class="file_area">
+                <div id="files_names"></div>
+                <input type="file" id="files_input" onchange="null_troubleshoot()" multiple />
+                <div class="status">
+                  <p>
+                    <strong>Uploading status:</strong>
+                    <span class="status-message">🤷‍♂ Nothing's uploaded</span>
+                  </p>
+                </div>
+            </div>
+            <div class="comment_area">2</div>
+        </div>
+        <div class="p_footer">
+            <button class="close_pop_up" onclick="closePopUp()" type="button">Close</button>
+            <button class="close_pop_up" onclick="closePopUp()" type="button">Validate</button>
+        </div>
+    </div>
+</body>
+</html>
+    

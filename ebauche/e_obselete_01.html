@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e_obselete_01</title>
+    <link rel="stylesheet" href="e_obselete_01.css">
+    <script src="e_obselete_01.js"></script>
+    
+</head>
+<body>
+    <!-- Button to simulate the obselete pop up -->
+    <button id="mock button" type="button" onclick="obselete()">Mock button</button>
+    
+    <!-- The true pop up -->
+    <div class="small_pop_up" id="obselete_pop_up">
+        <!-- Header -->
+        <div class="p_header">
+            <h2>Obselete pop up</h2>
+        </div>
+        <!-- The content -->
+        <div class="p_content">
+            <p>Sorry, this pop up is obselete</p>
+        </div>
+        <!-- The footer -->
+        <div class="p_footer">
+            <button id="close_pop_up" onclick="closePopUp()" type="button">Close</button>
+            <button id="validation" onclick="obselete()" type="button">Validation</button>
+        </div>
+    </div>
+</body>

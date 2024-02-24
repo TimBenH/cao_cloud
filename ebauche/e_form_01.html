@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+
+<body>
+    <h2>Submit Form</h2>
+
+    <form action="e_form_01.php" method="post">
+        <!-- Les actions utilisateurs: -->
+        <label for="file">File:</label><br>
+        <input type="file" id="file"><br>
+        <label for="comment">Comment:</label><br>
+        <input type="text" id="comment"><br>
+        <label for="projet">Projet:</label><br>
+        
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" readonly><br><br>
+        <label for="id">ID:</label><br>
+        <input type="text" id="id" name="id" readonly><br><br>
+        <label for="date">Date:</label><br>
+        <input type="text" id="date" name="date" readonly><br><br>
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+</body>
+</html>
