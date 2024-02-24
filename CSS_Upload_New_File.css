@@ -98,3 +98,9 @@ img {
 #zone2{
     margin-left: 10%;  
 }
+
+
+.drag-over {
+    border-color: #00f; /* Couleur de la bordure lorsque survolé */
+    background-color: #f0f0f0; /* Couleur de fond lorsque survolé */
+}

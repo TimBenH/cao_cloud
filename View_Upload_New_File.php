@@ -5,10 +5,11 @@
              $fichier_selctionner= 'fichier 1';
             echo '<title>'."Nouvelle version du $fichier_selctionner".'</title>'?> <!--nom du fichier a modifier, recupéré via un get dans le controller-->
             <link rel="stylesheet" href="CSS_Upload_New_File.css">
+            <link rel=”stylesheet” type=”text/css” href=”/public/plugins/dropzone/dropzone.css” />
     </head>
     <body>
 
-        
+    
 
     <?php
     // Exemple de données
@@ -23,13 +24,17 @@
         <div id="zone">
             <div id="zone1" class="flexItem">
                 <p id="instruction1">Déposer la nouvelle version ci-dessous<br></p>
-                <div classe="cadre" id="cadreZoneDepot">
-                    
-                    <div id="cadretiretZoneDepot">
-                        <img src="http://projettai/code/image/t%c3%a9l%c3%a9charger.png" alt="Flèche téléchargement">
-                        <p id="instruction2"><br>Vous pouvez glisser un fichier ici pour l'ajouter <br></p>
-                        
-                    </div>
+                <div class="cadre" id="cadreZoneDepot">
+                    <form action="/file-upload" class="dropzone" id="dropzone-area" enctype="multipart/form-data">
+
+                        <div id="cadretiretZoneDepot">
+                            <form action="/file-upload" class="dropzone" id="dropzone-area" enctype="multipart/form-data"></form>
+
+                            <img src="http://projettai/code/image/t%c3%a9l%c3%a9charger.png" alt="Flèche téléchargement">
+                            <p id="instruction2"><br>Vous pouvez glisser un fichier ici pour l'ajouter <br></p>
+                            
+                        </div>
+                    </form>
                 </div>
                     
                 <div>
@@ -60,5 +65,8 @@
                 </div>
             </div>
         </div>
+    <script src="http://projettai/code/cao_cloud/Java_Upload_New_File.js"></script>   
+    <script type=”text/javascript” src=”/public/plugins/jquery/jquery.min.js”></script>
+    <script type=”text/javascript” src=”/public/plugins/dropzone/dropzone.js”></script> 
     </body>
 </html>
