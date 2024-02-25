@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Uploader la nouvelle version</h1>
-    <button id=BAccueil href="home.php">Accueil</button><br>
+    <button id=BAccueil href="home.php">Accueil</button><br>    <!-- attention mettre le bon chemin pour arriver a la page d'accueil -->
     <div id="cadre">
         <div id="chargerF">
             <label id="Choix" for="file">Choisir fichier:</label><br>

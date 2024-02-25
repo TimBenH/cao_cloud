@@ -19,12 +19,12 @@ class NUF_model {
         return $result['row_count'];
     }
 
-    public function saveFile($date, $nom, $idProjet, $data, $commentaire) {
+    public function saveFile($nom, $date, $id, $id_projet, $id_precedent, $data, $commentaire) {
         // Préparation de la requête SQL d'insertion
-        $stmt = $this->db->prepare("INSERT INTO fichier (nom, date, id_projet, data, description) VALUES (?, ?, ?, ?, ?)");
+        $stmt = $this->db->prepare("INSERT INTO fichier (nom, date,id, id_projet, id_precedent, data, description) VALUES (?, ?, ?, ?, ?, ?, ?)");
 
         // Exécution de la requête avec les valeurs fournies
-        $stmt->execute([$nom, $date, $idProjet, $data, $commentaire]);
+        $stmt->execute([$nom, $date, $id, $id_projet, $id_precedent, $data, $commentaire]);
     }
 }
 

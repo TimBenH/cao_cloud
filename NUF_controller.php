@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $date = date("Y-m-d H:i:s");
 $idProjet = 1;  // Remplacez par l'ID du projet réel
 $projetSelectionne = 1;
-$nom = $idProjet . '.' . (numNewFile($projetSelectionne) + 1);  // Correction de l'ordre d'affectation
+$nom = $idProjet . '.' . (numNewFile($projetSelectionne) + 1);  // la nmenclature des projets est la suivante: num projet.num version
 $filepath = displayFilePath();
 $data = file_get_contents("$filepath"); 
 
