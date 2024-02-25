@@ -7,8 +7,8 @@ cadretiretZoneDepot.addEventListener('dragover', function(e) {
 });
 
 cadretiretZoneDepot.addEventListener('dragleave', function() {
-    cadretiretZoneDepot.style.border = 'none'; // Retour à la bordure normale
-    cadretiretZoneDepot.style.backgroundColor = 'transparent'; // Retour à la couleur de fond transparente
+    cadretiretZoneDepot.style.border = '2px dashed #595858;'; // Retour à la bordure normale
+    cadretiretZoneDepot.style.backgroundColor = '#dbd8d8'; // Retour à la couleur de fond transparente
 });
 
 cadretiretZoneDepot.addEventListener('drop', function(e) {

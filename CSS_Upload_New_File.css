@@ -65,7 +65,7 @@ img {
     height: 100%;
     border-radius: 5%;
     box-sizing: border-box;
-    border: 4px dashed #595858;
+    border: 2px dashed #595858;
     background-color:#dbd8d8 ;
     padding: 20px;
     display: grid;

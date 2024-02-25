@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
     <head>
         <?php 
              //Exemple de donnée-->
@@ -6,6 +6,8 @@
             echo '<title>'."Nouvelle version du $fichier_selctionner".'</title>'?> <!--nom du fichier a modifier, recupéré via un get dans le controller-->
             <link rel="stylesheet" href="CSS_Upload_New_File.css">
             <link rel=”stylesheet” type=”text/css” href=”/public/plugins/dropzone/dropzone.css” />
+            <link rel="icon" href="data:,">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/basic.min.css"/>
     </head>
     <body>
 
@@ -68,5 +70,7 @@
     <script src="http://projettai/code/cao_cloud/Java_Upload_New_File.js"></script>   
     <script type=”text/javascript” src=”/public/plugins/jquery/jquery.min.js”></script>
     <script type=”text/javascript” src=”/public/plugins/dropzone/dropzone.js”></script> 
+<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script> -->
     </body>
 </html>
