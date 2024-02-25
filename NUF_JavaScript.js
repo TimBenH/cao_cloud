@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('uploadForm');
+    const form = document.getElementById('add_file_f');
     const fileInput = document.getElementById('file');
     const commentInput = document.getElementById('comment');
-    const saveBtn = document.getElementById('saveBtn');
+    const submit_file = document.getElementById('saveBtn');
     const cancelBtn = document.getElementById('cancelBtn');
 
     // Enregistrez les valeurs initiales
@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
         alert("Commentaire enregistré : " + commentaireEnregistre);
     }
 
-    saveBtn.addEventListener('click', function () {
-        // Assurez-vous de définir les variables appropriées avant de les utiliser
+  /*  submit_file.addEventListener('click', function () {
+        // définir les variables appropriées avant de les utiliser
         var date = ""; // Remplacez par la valeur appropriée
         var nom = "";  // Remplacez par la valeur appropriée
         var idProjet = "";  // Remplacez par la valeur appropriée
@@ -37,19 +37,16 @@ document.addEventListener('DOMContentLoaded', function () {
         // Appel à la fonction sauvegarderCommentaire
         sauvegarderCommentaire();
 
-        // Assurez-vous que la classe NUF_model est correctement définie
+        
         var NUF_model = new NUF_model();
         NUF_model.saveFile(date, nom, idProjet, data, commentaire);
-
-        // Ajoutez ici la logique d'envoi des données au serveur (AJAX ou soumission normale du formulaire)
-        // Exemple : form.submit(); pour la soumission normale du formulaire
     });
 
-    function displayFilePath() {
+    /*function displayFilePath() {
         const filePath = fileInput.value; // Contient le chemin du fichier côté client
         console.log("Chemin du fichier côté client :", filePath);
         return filePath;
-    }
+    } */
 
     // Sur le chargement de la page, enregistrez les valeurs initiales
     window.addEventListener('load', function () {

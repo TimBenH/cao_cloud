@@ -15,12 +15,14 @@
             <label id="Choix" for="file">Choisir fichier:</label><br>
             <input type="file" id="file" name="file" required><br>
         </div>
-        <form method="post" action="NUF_controller.php">
+        <form id="add_file_f" action="NUF_controller.php" method="post" enctype="multipart/form-data">
         
-            <label for="comment">Commentaire:</label>
-            <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
-        
-            <button type="submit" id="saveBtn">Sauvegarder</button>
+           <!-- <label for="comment">Commentaire:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br> -->
+            <label for="comment">Description :</label><br>
+            <input type="text" id="comment" name="description"><br>
+
+            <button id="submit_file" type="submit" value="Submit">Sauvegarder</button>
         
             <button type="button" id="cancelBtn">Annuler</button>
         </form>

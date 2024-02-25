@@ -8,13 +8,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $commentaire = $_POST["comment"];
 }
 
-$date = date("Y-m-d H:i:s");
-$idProjet = 1;  // Remplacez par l'ID du projet réel
-$projetSelectionne = 1;
-$nom = $idProjet . '.' . (numNewFile($projetSelectionne) + 1);  // la nmenclature des projets est la suivante: num projet.num version
-$filepath = displayFilePath();
-$data = file_get_contents("$filepath"); 
-
-$NUF_model = new NUF_model();
-$NUF_model->saveFile($date, $nom, $idProjet, $data, $commentaire);
 ?>
